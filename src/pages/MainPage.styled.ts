@@ -35,14 +35,11 @@ export const LogoWrapper = styled.div`
   align-items: flex-end;
   display: flex;
   height: 100%;
-  min-height: 200px;
-  max-height: 400px;
 `;
 
 export const Logo = styled.img`
   color: white;
-  max-width:100%;
-  max-height:100%;
-  height: auto;
-  width: auto;
+  width: 750px;
+  max-width: 100%;
+  max-height: 100%
 `;

@@ -14,7 +14,10 @@ export function Contact({ isImpressumOpen, setIsImpressumOpen }: ContactProps) {
         <Paragraph>
           Du suchst Livemusik für dein nächstes Event?
           Wir spielen zu viert oder auch in kleinerer Besetzung für zwei bis vier Stunden und bringen unsere eigene Soundanlage mit.
-          Nimm gerne Kontakt mit uns auf um ganz unverbindlich eine Buchung anzufragen, zum Beispiel unter <Link href='mailto:marc.hekeler@gmail.com'>marc.hekeler@gmail.com</Link>.
+          Nimm gerne Kontakt mit uns auf, um ganz unverbindlich eine Buchung anzufragen. Am besten direkt an unsere Mailadresse:
+        </Paragraph>
+        <Paragraph>
+          <Link href='mailto:info@carlstone.de'>info@carlstone.de</Link>
         </Paragraph>
         <S.ImpressumStyled>
           <S.ImpressumHead onClick={() => setIsImpressumOpen(!isImpressumOpen)}>
@@ -28,7 +31,8 @@ export function Contact({ isImpressumOpen, setIsImpressumOpen }: ContactProps) {
               71384 Weinstadt</p>
 
             <h3>Kontakt</h3>
-            <p>E-Mail: <Link href='mailto:marc.hekeler@gmail.com'>marc.hekeler@gmail.com</Link></p>
+              <p><Link href='mailto:info@carlstone.de'>info@carlstone.de</Link></p>
+              <p><Link href='mailto:marc.hekeler@gmail.com'>marc.hekeler@gmail.com</Link></p>
 
             <br />
             <h2>Webdesign & Programmierung</h2>
