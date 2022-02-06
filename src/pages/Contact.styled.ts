@@ -9,7 +9,7 @@ export const ContactStyled = styled.div`
 `;
 
 export const ContactWrapper = styled.div`
-  max-width: 80vh;
+  max-width: 800px;
 `;
 
 export const ImpressumStyled = styled.div`

@@ -3,21 +3,32 @@ import {dark, grey, white } from '../utils/colors';
 import Table from 'react-bootstrap/Table'
 
 export const TourStyled = styled.div`
-  align-items: center;
   height: 100%;
-  display: flex;
-  flex-direction: column;
+`;
+
+export const TourWrapper = styled.div`
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 800px;
+`;
+
+export const Heading = styled.div`
+  width: 100%;
+  text-align: center;
 `;
 
 export const TableWrapper = styled.div`
   padding: 16px 0;
+  width: 100%
 `;
 
 export const TableStyled = styled.table`
+  width: 100%
 `;
 
 export const TBody = styled.table`
   border-spacing: 0;
+  width: 100%
 `;
 
 export const TR = styled.tr`

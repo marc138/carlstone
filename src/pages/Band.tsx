@@ -105,7 +105,7 @@ export function Band() {
           {selected === carlstone && <S.Band>
               <S.Top>{selected.name}</S.Top>
               <Paragraph>{selected.description}</Paragraph>
-              <Paragraph>Wir sind <Link onClick={() =>setSelected(marc)}>{marcel.firstName} {marc.secondName}</Link>
+              <Paragraph>Wir sind <Link onClick={() =>setSelected(marc)}>{marc.firstName} {marc.secondName}</Link>
                   , <Link onClick={() =>setSelected(marcel)}>{marcel.firstName} {marcel.secondName}</Link>
                   , <Link onClick={() =>setSelected(juli)}>{juli.firstName} {juli.secondName}</Link>
                 {' und '} <Link onClick={() =>setSelected(max)}>{max.firstName} {max.secondName}</Link>.
@@ -116,7 +116,7 @@ export function Band() {
               <Paragraph>
                   Wir spielen eher ruhige Musik mit Akustikgitarre oder entspannter E-Gitarre, E-Piano, Cajon und Bass.
                   Dabei suchen wir uns querbeet aus, worauf wir Lust haben. <Link onClick={() => scrollTo('repertoire')}>Unser Repertoire</Link> reicht
-                  von Covern von Singer-Songwriter-Klassikern, über aktuellen Indie-Pop bis hin zu einigen selbst geschriebenen Titeln.
+                  von aktuellem Indie-Pop, über Cover von Singer-Songwriter-Klassikern, bis hin zu einigen selbst geschriebenen Titeln.
               </Paragraph>
               <Paragraph />
           </S.Band> }
