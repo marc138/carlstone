@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/carlstone/static/css/main.f221cdf4.css",
+    "main.js": "/carlstone/static/js/main.ae9d5bee.js",
+    "static/js/787.b7851cb9.chunk.js": "/carlstone/static/js/787.b7851cb9.chunk.js",
+    "static/media/marcel.jpg": "/carlstone/static/media/marcel.33c541307a490dc0f6a6.jpg",
+    "static/media/kelterfest_2.jpg": "/carlstone/static/media/kelterfest_2.91145b69c5716dda61a1.jpg",
+    "static/media/kelterfest_3.jpg": "/carlstone/static/media/kelterfest_3.d6e6fa0c17809663e70d.jpg",
+    "static/media/juli.jpg": "/carlstone/static/media/juli.86a4fb64c1dc3b226bb9.jpg",
+    "static/media/marc_2.jpg": "/carlstone/static/media/marc_2.1a72563c6fd6deba5ceb.jpg",
+    "static/media/kelterfest.jpg": "/carlstone/static/media/kelterfest.b8f2c714d6669db3b18e.jpg",
+    "static/media/juli_2.jpg": "/carlstone/static/media/juli_2.10a6493dbae5bfd6934b.jpg",
+    "static/media/marc.jpg": "/carlstone/static/media/marc.689fc45f9aa426db5d14.jpg",
+    "static/media/straßenmusik_2021.jpg": "/carlstone/static/media/straßenmusik_2021.478ce7e241b7641177b9.jpg",
+    "static/media/Weinberg.jpg": "/carlstone/static/media/Weinberg.577e566d09b9a03fb134.jpg",
+    "static/media/band.jpg": "/carlstone/static/media/band.12d9df63383cd858d1bb.jpg",
+    "static/media/Weinberg_2.jpg": "/carlstone/static/media/Weinberg_2.9d088fc4f67fdb69527a.jpg",
+    "static/media/gretle_2021.jpg": "/carlstone/static/media/gretle_2021.df5f2ada76b9e8fd56e8.jpg",
+    "static/media/hochzeit_2021.jpg": "/carlstone/static/media/hochzeit_2021.1c574e756edb5ec99b52.jpg",
+    "static/media/max.jpg": "/carlstone/static/media/max.4f89ee0e6940ae36a4ec.jpg",
+    "static/media/rmk_2020.jpg": "/carlstone/static/media/rmk_2020.abb1da9a15ce5c22baa8.jpg",
+    "static/media/Garage.jpg": "/carlstone/static/media/Garage.f4dee062d0e06ef07865.jpg",
+    "static/media/logo_white_big.svg": "/carlstone/static/media/logo_white_big.e1a4118fc92bc617142f25b98a2c6a3c.svg",
+    "index.html": "/carlstone/index.html",
+    "static/media/insta.svg": "/carlstone/static/media/insta.0526ae7bbd821bf2da94479e1885bd8f.svg",
+    "static/media/close.svg": "/carlstone/static/media/close.685aafe261032eb33d2b42b682b8776c.svg",
+    "static/media/menu.svg": "/carlstone/static/media/menu.5633f109811c04537824c5a6909e5243.svg",
+    "main.f221cdf4.css.map": "/carlstone/static/css/main.f221cdf4.css.map",
+    "main.ae9d5bee.js.map": "/carlstone/static/js/main.ae9d5bee.js.map",
+    "787.b7851cb9.chunk.js.map": "/carlstone/static/js/787.b7851cb9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f221cdf4.css",
+    "static/js/main.ae9d5bee.js"
+  ]
+}
