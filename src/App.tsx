@@ -20,7 +20,7 @@ function App() {
           <Page numberOfTabSpaces={0} cardColor={blue} title='die band' id='info'>
             <Band />
           </Page>
-          <Page numberOfTabSpaces={1} cardColor={grey} title='gallerie' id='gallery'>
+          <Page numberOfTabSpaces={1} cardColor={grey} title='galerie' id='gallery'>
             <Gallery />
           </Page>
           <Page numberOfTabSpaces={2} cardColor={blue} title='repertoire' id='repertoire'>

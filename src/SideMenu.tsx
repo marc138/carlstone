@@ -32,7 +32,7 @@ export function SideMenu({closeSideMenu, setIsImpressumOpen}: SideMenuProps) {
             closeSideMenu();
             scrollTo('gallery');
           }}>
-            gallerie</S.Entry>
+            galerie</S.Entry>
           <S.Entry onClick={() => {
             closeSideMenu();
             scrollTo('repertoire');
