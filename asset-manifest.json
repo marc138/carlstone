@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/carlstone/static/css/main.f221cdf4.css",
-    "main.js": "/carlstone/static/js/main.ae9d5bee.js",
+    "main.js": "/carlstone/static/js/main.4a3e7fb1.js",
     "static/js/787.b7851cb9.chunk.js": "/carlstone/static/js/787.b7851cb9.chunk.js",
     "static/media/marcel.jpg": "/carlstone/static/media/marcel.33c541307a490dc0f6a6.jpg",
     "static/media/kelterfest_2.jpg": "/carlstone/static/media/kelterfest_2.91145b69c5716dda61a1.jpg",
@@ -11,6 +11,7 @@
     "static/media/kelterfest.jpg": "/carlstone/static/media/kelterfest.b8f2c714d6669db3b18e.jpg",
     "static/media/juli_2.jpg": "/carlstone/static/media/juli_2.10a6493dbae5bfd6934b.jpg",
     "static/media/marc.jpg": "/carlstone/static/media/marc.689fc45f9aa426db5d14.jpg",
+    "static/media/amps.jpg": "/carlstone/static/media/amps.812a6a43e4436730ab0a.jpg",
     "static/media/straßenmusik_2021.jpg": "/carlstone/static/media/straßenmusik_2021.478ce7e241b7641177b9.jpg",
     "static/media/Weinberg.jpg": "/carlstone/static/media/Weinberg.577e566d09b9a03fb134.jpg",
     "static/media/band.jpg": "/carlstone/static/media/band.12d9df63383cd858d1bb.jpg",
@@ -26,11 +27,11 @@
     "static/media/close.svg": "/carlstone/static/media/close.685aafe261032eb33d2b42b682b8776c.svg",
     "static/media/menu.svg": "/carlstone/static/media/menu.5633f109811c04537824c5a6909e5243.svg",
     "main.f221cdf4.css.map": "/carlstone/static/css/main.f221cdf4.css.map",
-    "main.ae9d5bee.js.map": "/carlstone/static/js/main.ae9d5bee.js.map",
+    "main.4a3e7fb1.js.map": "/carlstone/static/js/main.4a3e7fb1.js.map",
     "787.b7851cb9.chunk.js.map": "/carlstone/static/js/787.b7851cb9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f221cdf4.css",
-    "static/js/main.ae9d5bee.js"
+    "static/js/main.4a3e7fb1.js"
   ]
 }
