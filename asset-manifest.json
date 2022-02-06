@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.f221cdf4.css",
-    "main.js": "/static/js/main.595f6962.js",
+    "main.js": "/static/js/main.abb3be39.js",
     "static/js/787.b7851cb9.chunk.js": "/static/js/787.b7851cb9.chunk.js",
     "static/media/straßenmusik_2021.jpg": "/static/media/straßenmusik_2021.478ce7e241b7641177b9.jpg",
     "static/media/kelterfest_2.jpg": "/static/media/kelterfest_2.8011a3b3a42a0d1ad019.jpg",
@@ -27,11 +27,11 @@
     "static/media/close.svg": "/static/media/close.685aafe261032eb33d2b42b682b8776c.svg",
     "static/media/menu.svg": "/static/media/menu.5633f109811c04537824c5a6909e5243.svg",
     "main.f221cdf4.css.map": "/static/css/main.f221cdf4.css.map",
-    "main.595f6962.js.map": "/static/js/main.595f6962.js.map",
+    "main.abb3be39.js.map": "/static/js/main.abb3be39.js.map",
     "787.b7851cb9.chunk.js.map": "/static/js/787.b7851cb9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f221cdf4.css",
-    "static/js/main.595f6962.js"
+    "static/js/main.abb3be39.js"
   ]
 }
