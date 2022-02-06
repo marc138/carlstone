@@ -36,7 +36,6 @@ export const MemberSelector = styled.div`
 `;
 
 export const MemberContainer = styled.div`
-  ${whiteBox}
   flex-grow: 0;
   max-width: 80vh;
 `;
