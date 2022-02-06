@@ -14,7 +14,10 @@ export function Contact({ isImpressumOpen, setIsImpressumOpen }: ContactProps) {
         <Paragraph>
           Du suchst Livemusik für dein nächstes Event?
           Wir spielen zu viert oder auch in kleinerer Besetzung für zwei bis vier Stunden und bringen unsere eigene Soundanlage mit.
-          Nimm gerne Kontakt mit uns auf, um ganz unverbindlich eine Buchung anzufragen. Am besten direkt an unsere Mailadresse:
+          Nimm gerne Kontakt mit uns auf, um ganz unverbindlich eine Buchung anzufragen.
+        </Paragraph>
+        <Paragraph>
+          Schreib uns einfach an unsere Mailadresse:
         </Paragraph>
         <Paragraph>
           <Link href='mailto:info@carlstone.de'>info@carlstone.de</Link>
