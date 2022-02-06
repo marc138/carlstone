@@ -4,6 +4,7 @@ import marcImg from '../resources/images/marc.jpg';
 import marcelImg from '../resources/images/marcel.jpg';
 import juliImg from '../resources/images/juli.jpg';
 import maxImg from '../resources/images/max.jpg';
+import amps from '../resources/images/amps.jpg';
 import { scrollTo } from '../utils/jumper';
 import * as S from './Band.styled';
 import {Link, Paragraph } from '../App.styled';
@@ -29,6 +30,12 @@ const carlstone: Band = {
   name: 'carlstone',
   image: band,
   description: 'Nachhaltige und handgemachte Live-Musik seit 2018.',
+}
+
+const history: Band = {
+  name: 'mehr infos',
+  image: amps,
+  description: 'kurze geschichte',
 }
 
 const marc: Member = {
@@ -69,7 +76,7 @@ const max: Member = {
 
 const members = [marc, marcel, juli, max];
 
-const selectables = [carlstone, ...members];
+const selectables = [carlstone, ...members, history];
 
 type MemberSelectorProps = {
   memberName: string;
@@ -101,7 +108,7 @@ export function Band() {
               <Paragraph>Wir sind <Link onClick={() =>setSelected(marc)}>{marcel.firstName} {marc.secondName}</Link>
                   , <Link onClick={() =>setSelected(marcel)}>{marcel.firstName} {marcel.secondName}</Link>
                   , <Link onClick={() =>setSelected(juli)}>{juli.firstName} {juli.secondName}</Link>
-                  {' und '} <Link onClick={() =>setSelected(max)}>{max.firstName} {max.secondName}</Link>.
+                {' und '} <Link onClick={() =>setSelected(max)}>{max.firstName} {max.secondName}</Link>.
                   Wir kommen aus Weinstadt und machen regelmäßig in Weinstadt und Umgebung gemütliche Livemusik.
                   Einige unserer Auftritte sind <Link onClick={() => scrollTo('tour')}>hier</Link> zu finden.
                   Man kann uns übrigens auch <Link onClick={() => scrollTo('contact')}>buchen</Link>!
@@ -111,6 +118,10 @@ export function Band() {
                   Dabei suchen wir uns querbeet aus, worauf wir Lust haben. <Link onClick={() => scrollTo('repertoire')}>Unser Repertoire</Link> reicht
                   von Covern von Singer-Songwriter-Klassikern, über aktuellen Indie-Pop bis hin zu einigen selbst geschriebenen Titeln.
               </Paragraph>
+              <Paragraph />
+          </S.Band> }
+          {selected === history && <S.Band>
+              <S.Top>{selected.name}</S.Top>
               <Paragraph>
                   Marcel und Marc haben sich bereits 2018 für einen ersten Auftritt als carlstone zusammengetan.
                   2019 waren es dann schon drei Auftritte, wobei zu Weihnachten im Gretle Juli dazu gekommen ist.

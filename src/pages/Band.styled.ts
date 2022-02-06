@@ -14,7 +14,7 @@ export const MemberSelectorContainer = styled.div`
   display: flex;
   flex-shrink: 0;
   justify-content: space-between;
-  max-width: 600px;
+  max-width: 625px;
   overflow: auto;
   margin-bottom: 8px;
   padding: 8px 0;
