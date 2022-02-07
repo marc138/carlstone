@@ -23,7 +23,7 @@ export const TopSpacer = styled.div<TopSpacerProps>`
 `;
 
 export const PageStyled = styled.div<PageStyledProps>`
-  border-radius: 16px 16px 0 0;
+  border-radius: 5px 5px 0 0;
   box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   pointer-events: auto;
   position: sticky;

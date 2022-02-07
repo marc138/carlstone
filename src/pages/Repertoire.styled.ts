@@ -7,5 +7,6 @@ export const RepertoireStyled = styled.div`
 `;
 
 export const SongList = styled.div`
-  max-width: 80vh;
+  max-width: 800px;
+  width: 100%;
 `;

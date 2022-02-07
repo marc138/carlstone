@@ -45,7 +45,7 @@ export const Pages = styled.div`
 
 export const Entry = styled.div`
   cursor: pointer;
-  font-size: 1.5em;
+  font-size: 24px;
   margin: 8px 0;
   padding: 8px;
   

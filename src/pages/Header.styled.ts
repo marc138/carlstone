@@ -19,5 +19,5 @@ export const Heading = styled.div`
   cursor: pointer;
   align-items: center;
   display: flex;
-  font-size: 1.5em;
+  font-size: 28px;
 `;

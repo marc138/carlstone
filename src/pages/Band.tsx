@@ -33,7 +33,7 @@ const carlstone: Band = {
 }
 
 const history: Band = {
-  name: 'mehr infos',
+  name: 'mehr',
   image: amps,
   description: 'kurze geschichte',
 }
@@ -81,11 +81,12 @@ const selectables = [carlstone, ...members, history];
 type MemberSelectorProps = {
   memberName: string;
   onClick: () => void;
+  isSelected: boolean;
 }
 
-function MemberSelector({memberName, onClick}: MemberSelectorProps) {
+function MemberSelector({memberName, onClick, isSelected}: MemberSelectorProps) {
   return (
-    <S.MemberSelector onClick={onClick}>{memberName}</S.MemberSelector>
+    <S.MemberSelector isSelected={isSelected} onClick={onClick}>{memberName}</S.MemberSelector>
   );
 }
 
@@ -95,7 +96,7 @@ export function Band() {
   return (
     <S.BandStyled>
       <S.MemberSelectorContainer>
-        {selectables.map( selectable => <MemberSelector memberName={selectable.name} onClick={() =>setSelected(selectable)}/>)}
+        {selectables.map( selectable => <MemberSelector isSelected={selectable === selected} memberName={selectable.name} onClick={() =>setSelected(selectable)}/>)}
       </S.MemberSelectorContainer>
       <S.MemberContainer>
         <S.ImageSide>

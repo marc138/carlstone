@@ -10,8 +10,8 @@ export const GalleryContainer = styled.div`
   height: calc(100% - 48px);
   margin: 24px 0;
   max-height: 100%;
-  max-width: 100%;
-  width: 80vh;
+  max-width: 800px;
+  width: 100%;
 `;
 
 export const Image = styled.img`
