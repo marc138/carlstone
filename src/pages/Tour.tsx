@@ -16,6 +16,11 @@ export function Tour() {
                 <S.TD>Vor der Kelter Strümpfelbach</S.TD>
               </S.TR>
               <S.TR>
+                <S.TD>08.09</S.TD>
+                <S.TD>Open Air im [zamma]</S.TD>
+                <S.TD>Ab 19:00 im <Link href='https://zamma-geradstetten.de/' target='_blank'>[zamma]</Link> Geradstetten</S.TD>
+              </S.TR>
+              <S.TR>
                 <S.TD>03.10</S.TD>
                 <S.TD>Weißwurstfrühstück im Gretle</S.TD>
                 <S.TD>Gasthaus <Link href='https://www.zum-gretle.de/' target='_blank'>Zum Gretle</Link> Strümpfelbach</S.TD>
