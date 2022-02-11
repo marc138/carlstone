@@ -57,8 +57,8 @@ export const ImageSide = styled.div`
 
 export const Image = styled.img`
   box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-  max-width: calc(100% - 32px);
-  margin: 16px;
+  max-width: calc(100% - 16px);
+  margin: 16px 16px 16px 0;
   min-width: 250px;
 `;
 
