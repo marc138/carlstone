@@ -29,7 +29,7 @@ type Selectable = Band | Member;
 const carlstone: Band = {
   name: 'carlstone',
   image: band,
-  description: 'Nachhaltige und handgemachte Live-Musik seit 2018.',
+  description: 'Nachhaltige und handgemachte Live-Musik aus regionalen Produkten seit 2018.',
 }
 
 const history: Band = {
