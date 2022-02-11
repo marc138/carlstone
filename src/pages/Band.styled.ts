@@ -1,6 +1,6 @@
 import styled, { css } from 'styled-components';
 import { Paragraph, whiteBox } from '../App.styled';
-import {grey, white } from '../utils/colors';
+import {blue, white } from '../utils/colors';
 
 export const BandStyled = styled.div`
   align-items: center;
@@ -27,7 +27,7 @@ type MemberSelectorStyledProps = {
 
 export const marked = css`
     background-color: ${white};
-    color: ${grey};
+    color: ${blue};
   `
 
 export const MemberSelector = styled.div<MemberSelectorStyledProps>`
