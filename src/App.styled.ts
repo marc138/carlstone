@@ -7,7 +7,7 @@ export const App = styled.div`
 `;
 
 export const Link = styled.a`
-  color: inherit;
+  color: ${white};
   cursor: pointer;
   font-weight: bold;
   text-decoration: none;
