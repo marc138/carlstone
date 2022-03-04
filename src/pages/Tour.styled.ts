@@ -32,6 +32,7 @@ export const TBody = styled.table`
 `;
 
 export const TR = styled.tr`
+  color: white;
   :hover {
     background-color: ${white};
     color: ${grey};
