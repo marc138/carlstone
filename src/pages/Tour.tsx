@@ -11,6 +11,11 @@ export function Tour() {
           <S.TableStyled>
             <S.TBody>
               <S.TR>
+                <S.TD>05.03</S.TD>
+                <S.TD>Straßenmusik im Besa</S.TD>
+                <S.TD>Ab 16:00 bei <Link href='https://www.kuhnle-neue-scheuer.de/' target='_blank'>Kuhnle Neue Scheuer</Link></S.TD>
+              </S.TR>
+              <S.TR>
                 <S.TD>21.06</S.TD>
                 <S.TD>Fête de la Musique</S.TD>
                 <S.TD>Vor der Kelter Strümpfelbach</S.TD>
