@@ -7,12 +7,15 @@ export const BandStyled = styled.div`
   height: 100%;
   display: flex;
   flex-direction: column;
+  overflow: auto;
   padding: 0 8px;
 `;
 
 export const MemberSelectorContainer = styled.div`
   display: flex;
   flex-shrink: 0;
+  flex-wrap: wrap;
+  gap: 4px;
   justify-content: space-between;
   max-width: 800px;
   overflow: auto;
@@ -26,15 +29,14 @@ type MemberSelectorStyledProps = {
 }
 
 export const marked = css`
-    background-color: ${white};
-    color: ${blue};
-  `
+  background-color: ${white};
+  color: ${blue};
+`
 
 export const MemberSelector = styled.div<MemberSelectorStyledProps>`
   ${whiteBox}
   cursor: pointer;
-  flex: 1 0 80px;
-  margin: 0 8px;
+  flex: 0 0 110px;
   padding: 2px;
   text-align: center;
   
@@ -45,7 +47,6 @@ export const MemberSelector = styled.div<MemberSelectorStyledProps>`
 export const MemberContainer = styled.div`
   flex-grow: 0;
   max-width: 800px;
-  overflow: auto;
   width: 100%;
 `;
 

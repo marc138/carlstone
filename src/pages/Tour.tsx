@@ -20,6 +20,11 @@ export function Tour() {
                 <S.TD>Straßenmusik im Besa</S.TD>
                 <S.TD>Ab 16:00 bei <Link>Kuhnle Neue Scheuer</Link></S.TD>
               </S.TR>
+              <S.TR onClick={openLink('https://www.hho-stetten.de/')}>
+                <S.TD>08.05</S.TD>
+                <S.TD>Muttertagsfest</S.TD>
+                <S.TD>Ab 19:30 beim <Link>Handharmonika Orchester Stetten</Link></S.TD>
+              </S.TR>
               <S.TR>
                 <S.TD>21.06</S.TD>
                 <S.TD>Fête de la Musique</S.TD>
