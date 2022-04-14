@@ -30,6 +30,11 @@ export function SideMenu({closeSideMenu, setIsImpressumOpen}: SideMenuProps) {
             die band</S.Entry>
           <S.Entry onClick={() => {
             closeSideMenu();
+            scrollTo('tour');
+          }}>
+            auftritte</S.Entry>
+          <S.Entry onClick={() => {
+            closeSideMenu();
             scrollTo('gallery');
           }}>
             galerie</S.Entry>
@@ -38,11 +43,6 @@ export function SideMenu({closeSideMenu, setIsImpressumOpen}: SideMenuProps) {
             scrollTo('repertoire');
           }}>
             repertoire</S.Entry>
-          <S.Entry onClick={() => {
-            closeSideMenu();
-            scrollTo('tour');
-          }}>
-            auftritte</S.Entry>
           <S.Entry onClick={() => {
             closeSideMenu();
             scrollTo('contact');

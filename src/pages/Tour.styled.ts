@@ -18,31 +18,38 @@ export const Heading = styled.div`
 `;
 
 export const TableWrapper = styled.div`
-  padding: 16px 0;
+  padding: 8px 0;
   width: 100%
 `;
 
-export const TableStyled = styled.table`
-  width: 100%
-`;
-
-export const TBody = styled.table`
-  border-spacing: 0;
-  width: 100%
-`;
-
-export const TR = styled.tr`
+export const Entry = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  justify-content: space-between;
+  padding: 10px 0;
   :hover {
     background-color: ${white};
     color: ${grey};
   }
 `;
 
-type TDProps = {
-  isLast: boolean
-}
+export const DateField = styled.div`
+  flex-basis: 50px;
+  flex-grow: 1;
+`;
 
-export const TD = styled.td<TDProps>`
-  ${ ({isLast}) => !isLast && css`border-bottom: 2px solid ${white};`}
-  padding: 8px;
+export const HeadingField = styled.div`
+  flex-basis: 200px;
+  flex-grow: 6;
+`;
+
+export const DescriptionField = styled.div`
+  flex-basis: 200px;
+  flex-grow: 6;
+`;
+
+export const Line = styled.hr`
+  border-top: 1px solid ${white};
+  margin: 0;
 `;

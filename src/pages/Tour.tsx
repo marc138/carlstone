@@ -3,9 +3,92 @@ import { Link } from '../App.styled';
 import * as S from './Tour.styled';
 import {dark, grey, white } from './../utils/colors';
 
+const reactStringReplace = require('react-string-replace');
+
 function openLink(link: string) {
   return () => window.open(link, '_blank');
 }
+
+type TourDate = {
+  date: string;
+  link?: {
+    link: string;
+    name: string;
+  };
+  heading: string;
+  description: string;
+}
+
+const tourDates: TourDate[] = [
+  {
+    date: '05.03',
+    link: {
+      link: 'https://www.kuhnle-neue-scheuer.de/',
+      name: 'Kuhnle Neue Scheuer',
+    },
+    heading: 'Straßenmusik im Besa',
+    description: 'Ab 16:00 bei %link%',
+  },
+  {
+    date: '08.05',
+    link: {
+      link: 'https://www.hho-stetten.de/',
+      name: 'Handharmonika Orchester Stetten',
+    },
+    heading: 'Muttertagsfest',
+    description: 'Ab 19:30 beim %link% in Stetten',
+  },
+  {
+    date: '21.06',
+    heading: 'Fête de la Musique',
+    description: 'Vor der Kelter Strümpfelbach',
+  },
+  {
+    date: '25.06',
+    link: {
+      link: 'https://weingut-idler.de/',
+      name: 'Weingut Idler',
+    },
+    heading: 'Sommerausschank %link%',
+    description: 'Ab ca 18:00 im %link% Strümpfelbach',
+  },
+  {
+    date: '08.09',
+    link: {
+      link: 'https://zamma-geradstetten.de/',
+      name: 'Weingut Idler',
+    },
+    heading: 'Open Air im %link%',
+    description: 'Ab 19:00 im %link% Geradstetten',
+  },
+  {
+    date: '03.10',
+    link: {
+      link: 'https://www.zum-gretle.de/',
+      name: 'Gretle',
+    },
+    heading: 'Weißwurstfrühstück im %link%',
+    description: 'Ab 11:00 im Gasthaus %link% Strümpfelbach',
+  },
+  {
+    date: '15.10',
+    link: {
+      link: 'https://www.tcgeradstetten.de/',
+      name: 'Tennisclub Geradstetten',
+    },
+    heading: '50-jähriges Jubiläum %link%',
+    description: 'Clubheim des %link%',
+  },
+  {
+    date: '24.12',
+    link: {
+      link: 'https://www.zum-gretle.de/',
+      name: 'Gretle',
+    },
+    heading: 'Scheinheiliger Vormittag im %link%',
+    description: 'Ab 11:00 im Gasthaus %link% Strümpfelbach',
+  },
+];
 
 export function Tour() {
   return (
@@ -13,50 +96,23 @@ export function Tour() {
       <S.TourWrapper>
         <S.Heading>2022</S.Heading>
         <S.TableWrapper>
-          <S.TableStyled>
-            <S.TBody>
-              <S.TR onClick={openLink('https://www.kuhnle-neue-scheuer.de/')}>
-                <S.TD>05.03</S.TD>
-                <S.TD>Straßenmusik im Besa</S.TD>
-                <S.TD>Ab 16:00 bei <Link>Kuhnle Neue Scheuer</Link></S.TD>
-              </S.TR>
-              <S.TR onClick={openLink('https://www.hho-stetten.de/')}>
-                <S.TD>08.05</S.TD>
-                <S.TD>Muttertagsfest</S.TD>
-                <S.TD>Ab 19:30 beim <Link>Handharmonika Orchester Stetten</Link></S.TD>
-              </S.TR>
-              <S.TR>
-                <S.TD>21.06</S.TD>
-                <S.TD>Fête de la Musique</S.TD>
-                <S.TD>Vor der Kelter Strümpfelbach</S.TD>
-              </S.TR>
-              <S.TR onClick={openLink('https://weingut-idler.de/')}>
-                <S.TD>25.06</S.TD>
-                <S.TD>Sommer Ausschank Weinugt Idler</S.TD>
-                <S.TD>Ab ca 18:00 im <Link >Weingut Idler</Link></S.TD>
-              </S.TR>
-              <S.TR onClick={openLink('https://zamma-geradstetten.de/')}>
-                <S.TD>08.09</S.TD>
-                <S.TD>Open Air im [zamma]</S.TD>
-                <S.TD>Ab 19:00 im <Link>[zamma]</Link> Geradstetten</S.TD>
-              </S.TR>
-              <S.TR onClick={openLink('https://www.zum-gretle.de/')}>
-                <S.TD>03.10</S.TD>
-                <S.TD>Weißwurstfrühstück im Gretle</S.TD>
-                <S.TD>Gasthaus <Link>Zum Gretle</Link> Strümpfelbach</S.TD>
-              </S.TR>
-              <S.TR onClick={openLink('https://www.tcgeradstetten.de/')}>
-                <S.TD>15.10</S.TD>
-                <S.TD>50-jähriges Jubiläum Tennisclub Geradstetten</S.TD>
-                <S.TD>Clubheim des <Link>TC Geradstetten</Link></S.TD>
-              </S.TR>
-              <S.TR onClick={openLink('https://www.zum-gretle.de/')}>
-                <S.TD isLast={true}>24.12.</S.TD>
-                <S.TD isLast={true}>Scheinheiliger Vormittag im Gretle</S.TD>
-                <S.TD isLast={true}>Gasthaus <Link>Zum Gretle</Link> Strümpfelbach</S.TD>
-              </S.TR>
-            </S.TBody>
-          </S.TableStyled>
+          {tourDates.map((tourDate, index) =>
+            <>
+              { index !== 0 && <S.Line/>}
+              <S.Entry>
+                <S.DateField>{tourDate.date}</S.DateField>
+                <S.HeadingField>
+                  {reactStringReplace(tourDate.heading, '%link%', (match, i) => tourDate.link && (
+                    <Link onClick={openLink(tourDate.link.link)}>{tourDate.link.name}</Link>
+                  ))}</S.HeadingField>
+                <S.DescriptionField>
+                  {reactStringReplace(tourDate.description, '%link%', (match, i) => tourDate.link && (
+                    <Link onClick={openLink(tourDate.link.link)}>{tourDate.link.name}</Link>
+                  ))}
+                </S.DescriptionField>
+              </S.Entry>
+            </>
+          )}
         </S.TableWrapper>
       </S.TourWrapper>
     </S.TourStyled>)
