@@ -56,10 +56,19 @@ const tourDates: TourDate[] = [
     date: '08.09',
     link: {
       link: 'https://zamma-geradstetten.de/',
-      name: 'Weingut Idler',
+      name: '[zamma]',
     },
     heading: 'Open Air im %link%',
     description: 'Ab 19:00 im %link% Geradstetten',
+  },
+  {
+    date: '16.09',
+    link: {
+      link: 'https://www.mannschreck-weine.com/',
+      name: 'Mannschreck Weine',
+    },
+    heading: 'Nacht der Keller',
+    description: 'Den ganzen Abend im Keller von %link% in Strümpfelbach',
   },
   {
     date: '03.10',
