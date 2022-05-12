@@ -1,7 +1,6 @@
 import React from 'react';
 import { Link } from '../App.styled';
 import * as S from './Tour.styled';
-import {dark, grey, white } from './../utils/colors';
 
 const reactStringReplace = require('react-string-replace');
 
@@ -99,7 +98,7 @@ const tourDates: TourDate[] = [
   },
 ];
 
-export function Tour() {
+export function Tour(): JSX.Element {
   return (
     <S.TourStyled>
       <S.TourWrapper>
@@ -124,5 +123,6 @@ export function Tour() {
           )}
         </S.TableWrapper>
       </S.TourWrapper>
-    </S.TourStyled>)
+    </S.TourStyled>
+    )
 }

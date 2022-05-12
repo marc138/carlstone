@@ -2,9 +2,10 @@ import styled from 'styled-components';
 import { headerHeight } from './Header.styled';
 
 export const MainPageStyled = styled.div`
+  height: calc(100vh - ${headerHeight}px);
   position: sticky;
-  top: 0;
-  height: 100vh;
+  z-index: 0;
+  top: ${headerHeight}px;
 `;
 
 export const MainPageContent = styled.div`

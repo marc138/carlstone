@@ -9,12 +9,12 @@ type PageProps = {
   cardColor: string;
   title: string;
   id: string;
+  isLastPage?: boolean;
 };
 
-function Page({children, numberOfTabSpaces, cardColor, title, id}: PageProps) {
+function Page({children, numberOfTabSpaces, cardColor, title, id, isLastPage = false}: PageProps) {
   return (
-    <>
-      <S.TopSpacer id={id} numberOfTabSpaces={numberOfTabSpaces} />
+    <S.PageWrapper id={id} isLastPage={isLastPage}>
       <S.PageStyled numberOfTabSpaces={numberOfTabSpaces} cardColor={cardColor}>
         <ContentContainer>
           <S.Card>
@@ -29,7 +29,7 @@ function Page({children, numberOfTabSpaces, cardColor, title, id}: PageProps) {
           </S.Card>
         </ContentContainer>
       </S.PageStyled>
-    </>
+    </S.PageWrapper>
   );
 }
 

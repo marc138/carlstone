@@ -6,6 +6,11 @@ export const App = styled.div`
   color: ${white};
 `;
 
+export const PagesContent = styled.div`
+position: relative;
+z-index: 10;
+`;
+
 export const Link = styled.a`
   color: inherit;
   cursor: pointer;

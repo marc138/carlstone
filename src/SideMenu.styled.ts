@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { dark, grey, white } from './utils/colors';
+import { grey, white } from './utils/colors';
 
 export const BackGround = styled.div`
   height: 100%;
@@ -7,7 +7,7 @@ export const BackGround = styled.div`
   position: fixed;
   top: 0;
   width: 100%;
-  z-index: 90;
+  z-index: 99;
 `;
 
 export const SideMenuStyled = styled.div`

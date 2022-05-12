@@ -3,38 +3,25 @@ import { headerHeight } from './pages/Header.styled';
 
 export const tabSpacer = 48;
 
-type TopSpacerProps = {
-  numberOfTabSpaces: number;
-}
-
+type PageWrapperProps = {
+  isLastPage: boolean;
+};
 type PageStyledProps = {
   numberOfTabSpaces: number;
   cardColor: string;
 };
 
-export const Id = styled.div`
-  pointer-events: none;
-`;
-
-export const TopSpacer = styled.div<TopSpacerProps>`
-  ${({numberOfTabSpaces}) => css`
-    padding-bottom: calc(${headerHeight}px + ${numberOfTabSpaces} * ${tabSpacer}px);
-  `}
+export const PageWrapper = styled.div<PageWrapperProps>`
+  padding-top: ${headerHeight}px;
+  ${({isLastPage}) => !isLastPage && css`margin-bottom: 60px;`};
 `;
 
 export const PageStyled = styled.div<PageStyledProps>`
-  border-radius: 5px 5px 0 0;
   box-shadow: 0 4px 8px 4px rgba(0, 0, 0, 0.3), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding-bottom: 16px;
   pointer-events: auto;
-  position: sticky;
 
   ${({cardColor}) => css`background-color: ${cardColor}`};
-  ${({numberOfTabSpaces}) => css`
-    height: calc(100vh - ${headerHeight}px - ${numberOfTabSpaces} * ${tabSpacer}px);
-    margin-left: ${16 - numberOfTabSpaces * 2}px;
-    margin-right: ${8 + numberOfTabSpaces * 4}px;
-    top: calc(${headerHeight}px + ${numberOfTabSpaces} * ${tabSpacer}px);
-  `}
 `;
 
 export const Card = styled.div`
