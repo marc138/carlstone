@@ -115,7 +115,7 @@ export function Band() {
                   Man kann uns übrigens auch <Link onClick={() => scrollTo('contact')}>buchen</Link>!
               </Paragraph>
               <Paragraph>
-                  Wir spielen eher ruhige Musik mit Akustikgitarre oder entspannter E-Gitarre, E-Piano, Cajon und Bass.
+                  Wir spielen enspannte Musik mit Akustikgitarre oder ruhiger E-Gitarre, E-Piano, Cajon und Bass.
                   Dabei suchen wir uns querbeet aus, worauf wir Lust haben. <Link onClick={() => scrollTo('repertoire')}>Unser Repertoire</Link> reicht
                   von aktuellem Indie-Pop, über Cover von Singer-Songwriter-Klassikern, bis hin zu einigen selbst geschriebenen Titeln.
               </Paragraph>

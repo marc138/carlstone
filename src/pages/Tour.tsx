@@ -20,7 +20,7 @@ type TourDate = {
 
 const tourDates: TourDate[] = [
   {
-    date: '05.03',
+    date: '05.03.',
     link: {
       link: 'https://www.kuhnle-neue-scheuer.de/',
       name: 'Kuhnle Neue Scheuer',
@@ -29,7 +29,7 @@ const tourDates: TourDate[] = [
     description: 'Ab 16:00 bei %link%',
   },
   {
-    date: '08.05',
+    date: '08.05.',
     link: {
       link: 'https://www.hho-stetten.de/',
       name: 'Handharmonika Orchester Stetten',
@@ -38,12 +38,7 @@ const tourDates: TourDate[] = [
     description: 'Ab 19:30 beim %link% in Stetten',
   },
   {
-    date: '21.06',
-    heading: 'Fête de la Musique',
-    description: 'Vor der Kelter Strümpfelbach',
-  },
-  {
-    date: '25.06',
+    date: '25.06.',
     link: {
       link: 'https://weingut-idler.de/',
       name: 'Weingut Idler',
@@ -52,7 +47,7 @@ const tourDates: TourDate[] = [
     description: 'Ab ca 18:00 im %link% Strümpfelbach',
   },
   {
-    date: '08.09',
+    date: '08.09.',
     link: {
       link: 'https://zamma-geradstetten.de/',
       name: '[zamma]',
@@ -61,7 +56,7 @@ const tourDates: TourDate[] = [
     description: 'Ab 19:00 im %link% Geradstetten',
   },
   {
-    date: '16.09',
+    date: '16.09.',
     link: {
       link: 'https://www.mannschreck-weine.com/',
       name: 'Mannschreck Weine',
@@ -70,7 +65,16 @@ const tourDates: TourDate[] = [
     description: 'Den ganzen Abend im Keller von %link% in Strümpfelbach',
   },
   {
-    date: '03.10',
+    date: '17.09.',
+    link: {
+      link: 'http://www.weinfreunde-struempfelbach.de/',
+      name: 'Weinfreunde Strümpfelbach',
+    },
+    heading: 'Nacht der Keller',
+    description: 'Mit kleiner Besetzung den ganzen Abend im Keller der %link% in Strümpfelbach',
+  },
+  {
+    date: '03.10.',
     link: {
       link: 'https://www.zum-gretle.de/',
       name: 'Gretle',
@@ -79,7 +83,7 @@ const tourDates: TourDate[] = [
     description: 'Ab 11:00 im Gasthaus %link% Strümpfelbach',
   },
   {
-    date: '15.10',
+    date: '15.10.',
     link: {
       link: 'https://www.tcgeradstetten.de/',
       name: 'Tennisclub Geradstetten',
@@ -88,7 +92,7 @@ const tourDates: TourDate[] = [
     description: 'Clubheim des %link%',
   },
   {
-    date: '24.12',
+    date: '24.12.',
     link: {
       link: 'https://www.zum-gretle.de/',
       name: 'Gretle',
