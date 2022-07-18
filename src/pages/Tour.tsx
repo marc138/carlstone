@@ -16,6 +16,7 @@ type TourDate = {
   };
   heading: string;
   description: string;
+  hide?: boolean;
 }
 
 const tourDates: TourDate[] = [
@@ -45,6 +46,15 @@ const tourDates: TourDate[] = [
     },
     heading: 'Sommerausschank %link%',
     description: 'Ab ca 18:00 im %link% Strümpfelbach',
+  },
+  {
+    date: '26.08.',
+    link: {
+      link: 'https://www.kuhnle-neue-scheuer.de/',
+      name: 'Kuhnle Neue Scheuer',
+    },
+    heading: 'Sommerfest im Besa %link%',
+    description: 'Den ganzen Abend in Endersbach bei %link%',
   },
   {
     date: '08.09.',
@@ -90,6 +100,7 @@ const tourDates: TourDate[] = [
     },
     heading: '50-jähriges Jubiläum %link%',
     description: 'Clubheim des %link%',
+    hide: true,
   },
   {
     date: '24.12.',
@@ -108,23 +119,25 @@ export function Tour(): JSX.Element {
       <S.TourWrapper>
         <S.Heading>2022</S.Heading>
         <S.TableWrapper>
-          {tourDates.map((tourDate, index) =>
-            <>
-              { index !== 0 && <S.Line/>}
-              <S.Entry>
-                <S.DateField>{tourDate.date}</S.DateField>
-                <S.HeadingField>
-                  {reactStringReplace(tourDate.heading, '%link%', (match, i) => tourDate.link && (
-                    <Link onClick={openLink(tourDate.link.link)}>{tourDate.link.name}</Link>
-                  ))}</S.HeadingField>
-                <S.DescriptionField>
-                  {reactStringReplace(tourDate.description, '%link%', (match, i) => tourDate.link && (
-                    <Link onClick={openLink(tourDate.link.link)}>{tourDate.link.name}</Link>
-                  ))}
-                </S.DescriptionField>
-              </S.Entry>
-            </>
-          )}
+          {tourDates.map((tourDate, index) => {
+            return !tourDate.hide && (
+              <>
+                {index !== 0 && <S.Line/>}
+                <S.Entry>
+                  <S.DateField>{tourDate.date}</S.DateField>
+                  <S.HeadingField>
+                    {reactStringReplace(tourDate.heading, '%link%', (match, i) => tourDate.link && (
+                      <Link onClick={openLink(tourDate.link.link)}>{tourDate.link.name}</Link>
+                    ))}</S.HeadingField>
+                  <S.DescriptionField>
+                    {reactStringReplace(tourDate.description, '%link%', (match, i) => tourDate.link && (
+                      <Link onClick={openLink(tourDate.link.link)}>{tourDate.link.name}</Link>
+                    ))}
+                  </S.DescriptionField>
+                </S.Entry>
+              </>
+            );
+          })}
         </S.TableWrapper>
       </S.TourWrapper>
     </S.TourStyled>
