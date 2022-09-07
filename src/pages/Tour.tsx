@@ -66,6 +66,15 @@ const tourDates: TourDate[] = [
     description: 'Ab 19:00 im %link% Geradstetten',
   },
   {
+    date: '12.09.',
+    link: {
+      link: 'https://www.maier-weingut.de/veranstaltungen/',
+      name: 'Weingut Maier',
+    },
+    heading: 'Wein.Afterwork',
+    description: 'Beim letzen Wein.Afterwork im %link% in Schwaikheim',
+  },
+  {
     date: '16.09.',
     link: {
       link: 'https://www.mannschreck-weine.com/',
@@ -84,23 +93,13 @@ const tourDates: TourDate[] = [
     description: 'Mit kleiner Besetzung den ganzen Abend im Keller der %link% in Strümpfelbach',
   },
   {
-    date: '03.10.',
+    date: '23.10.',
     link: {
       link: 'https://www.zum-gretle.de/',
       name: 'Gretle',
     },
-    heading: 'Weißwurstfrühstück im %link%',
-    description: 'Ab 11:00 im Gasthaus %link% Strümpfelbach',
-  },
-  {
-    date: '15.10.',
-    link: {
-      link: 'https://www.tcgeradstetten.de/',
-      name: 'Tennisclub Geradstetten',
-    },
-    heading: '50-jähriges Jubiläum %link%',
-    description: 'Clubheim des %link%',
-    hide: true,
+    heading: 'Hoffest im %link%',
+    description: 'Traditioneller Auftritt im traditionellen Gasthaus %link% Strümpfelbach',
   },
   {
     date: '24.12.',
