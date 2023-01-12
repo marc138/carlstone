@@ -6,11 +6,16 @@ import weinberg2 from '../resources/images/Weinberg_2.jpg';
 import marc2 from '../resources/images/marc_2.jpg';
 import juli2 from '../resources/images/juli_2.jpg';
 import hochzeit from '../resources/images/hochzeit_2021.jpg';
-import straßenmusik from '../resources/images/straßenmusik_2021.jpg';
+import strassenmusik from '../resources/images/straßenmusik_2021.jpg';
 import garage from '../resources/images/Garage.jpg';
 import kelterfest from '../resources/images/kelterfest.jpg';
 import kelterfest2 from '../resources/images/kelterfest_2.jpg';
 import kelterfest3 from '../resources/images/kelterfest_3.jpg';
+import zamma_2022_1 from '../resources/images/zamma_2022_1.jpg';
+import zamma_2022_2 from '../resources/images/zamma_2022_2.jpg';
+import zamma_2022_3 from '../resources/images/zamma_2022_3.jpg';
+import idler_2022 from '../resources/images/idler_2022.jpg';
+import kelterfest2022 from '../resources/images/kelterfest_2022.jpg';
 import rmk from '../resources/images/rmk_2020.jpg';
 import * as S from './Gallery.styled';
 import "react-responsive-carousel/lib/styles/carousel.min.css"; // requires a loader
@@ -20,6 +25,26 @@ export function Gallery() {
     <S.GalleryStyled>
       <S.GalleryContainer>
         <Carousel showArrows={true} >
+          <div>
+            <img src={zamma_2022_1} alt={''}/>
+            <p className="legend">[zamma] in Geradstetten 2022</p>
+          </div>
+          <div>
+            <img src={zamma_2022_2} alt={''}/>
+            <p className="legend">[zamma] in Geradstetten 2022</p>
+          </div>
+          <div>
+            <img src={zamma_2022_3} alt={''}/>
+            <p className="legend">[zamma] in Geradstetten 2022</p>
+          </div>
+          <div>
+            <img src={kelterfest2022} alt={''}/>
+            <p className="legend">Kelterfest Strümpfelbach 2022</p>
+          </div>
+          <div>
+            <img src={idler_2022} alt={''}/>
+            <p className="legend">Weingut Idler 2022</p>
+          </div>
           <div>
             <img src={kelterfest} alt={''}/>
             <p className="legend">Kelterfest Strümpfelbach 2021</p>
@@ -45,7 +70,7 @@ export function Gallery() {
             <p className="legend">Weißwurstfrühstück im Gretle 2021</p>
           </div>
           <div>
-            <img src={straßenmusik} alt={''}/>
+            <img src={strassenmusik} alt={''}/>
             <p className="legend">Straßenmusik in Plochingen 2021</p>
           </div>
           <div>

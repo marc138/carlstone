@@ -1,7 +1,7 @@
 # Neue Version Veröffenltichen
 - sha keys in id_rsa umbenennen
 - git commit -m 'commit message' -a
-- push
+- git push
 - npm run deploy
 
 # Getting Started with Create React App

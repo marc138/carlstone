@@ -21,23 +21,68 @@ type TourDate = {
 
 const tourDates: TourDate[] = [
   {
-    date: '05.03.',
+    date: '28.01.',
     link: {
-      link: 'https://www.kuhnle-neue-scheuer.de/',
-      name: 'Kuhnle Neue Scheuer',
+      link: 'https://weingut-knauss.com/',
+      name: 'Weingut Knauß',
     },
-    heading: 'Straßenmusik im Besa',
-    description: 'Ab 16:00 bei %link%',
+    heading: 'WEIN x KULINARIK im Januar',
+    description: 'Ab 16:30 bei %link% in Strümpfelbach',
   },
   {
-    date: '08.05.',
+    date: '07.08.',
     link: {
-      link: 'https://www.hho-stetten.de/',
-      name: 'Handharmonika Orchester Stetten',
+      link: 'https://www.moedinger-weingut.de/',
+      name: 'Weingut Mödinger',
     },
-    heading: 'Muttertagsfest',
-    description: 'Ab 19:30 beim %link% in Stetten',
+    heading: 'Koppafest',
+    description: 'Abends im %link% in Strümpfelbach',
   },
+  {
+    date: '24.12.',
+    link: {
+      link: 'https://www.zum-gretle.de/',
+      name: 'Gretle',
+    },
+    heading: 'Scheinheiliger Vormittag im %link%',
+    description: 'Ab 11:00 im Gasthaus %link% Strümpfelbach',
+  },
+];
+
+export function Tour(): JSX.Element {
+  return (
+    <S.TourStyled>
+      <S.TourWrapper>
+        <S.Heading>2023</S.Heading>
+        <S.TableWrapper>
+          {tourDates.map((tourDate, index) => {
+            return !tourDate.hide && (
+              <>
+                {index !== 0 && <S.Line/>}
+                <S.Entry>
+                  <S.DateField>{tourDate.date}</S.DateField>
+                  <S.HeadingField>
+                    {reactStringReplace(tourDate.heading, '%link%', (match, i) => tourDate.link && (
+                      <Link onClick={openLink(tourDate.link.link)}>{tourDate.link.name}</Link>
+                    ))}</S.HeadingField>
+                  <S.DescriptionField>
+                    {reactStringReplace(tourDate.description, '%link%', (match, i) => tourDate.link && (
+                      <Link onClick={openLink(tourDate.link.link)}>{tourDate.link.name}</Link>
+                    ))}
+                  </S.DescriptionField>
+                </S.Entry>
+              </>
+            );
+          })}
+        </S.TableWrapper>
+      </S.TourWrapper>
+    </S.TourStyled>
+    )
+}
+
+/*
+
+
   {
     date: '25.06.',
     link: {
@@ -101,44 +146,5 @@ const tourDates: TourDate[] = [
     heading: 'Hoffest im %link%',
     description: 'Traditioneller Auftritt im traditionellen Gasthaus %link% Strümpfelbach',
   },
-  {
-    date: '24.12.',
-    link: {
-      link: 'https://www.zum-gretle.de/',
-      name: 'Gretle',
-    },
-    heading: 'Scheinheiliger Vormittag im %link%',
-    description: 'Ab 11:00 im Gasthaus %link% Strümpfelbach',
-  },
-];
 
-export function Tour(): JSX.Element {
-  return (
-    <S.TourStyled>
-      <S.TourWrapper>
-        <S.Heading>2022</S.Heading>
-        <S.TableWrapper>
-          {tourDates.map((tourDate, index) => {
-            return !tourDate.hide && (
-              <>
-                {index !== 0 && <S.Line/>}
-                <S.Entry>
-                  <S.DateField>{tourDate.date}</S.DateField>
-                  <S.HeadingField>
-                    {reactStringReplace(tourDate.heading, '%link%', (match, i) => tourDate.link && (
-                      <Link onClick={openLink(tourDate.link.link)}>{tourDate.link.name}</Link>
-                    ))}</S.HeadingField>
-                  <S.DescriptionField>
-                    {reactStringReplace(tourDate.description, '%link%', (match, i) => tourDate.link && (
-                      <Link onClick={openLink(tourDate.link.link)}>{tourDate.link.name}</Link>
-                    ))}
-                  </S.DescriptionField>
-                </S.Entry>
-              </>
-            );
-          })}
-        </S.TableWrapper>
-      </S.TourWrapper>
-    </S.TourStyled>
-    )
-}
+ */
