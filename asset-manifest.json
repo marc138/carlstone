@@ -1,8 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.cdb4874b.css",
-    "main.js": "/static/js/main.d7526fb0.js",
+    "main.js": "/static/js/main.d71a7ae3.js",
     "static/js/787.b7851cb9.chunk.js": "/static/js/787.b7851cb9.chunk.js",
+    "static/media/idler_2022.jpg": "/static/media/idler_2022.008f36d688a738719d1e.jpg",
+    "static/media/kelterfest_2022.jpg": "/static/media/kelterfest_2022.39e3f2bb96e831b8647e.jpg",
+    "static/media/zamma_2022_1.jpg": "/static/media/zamma_2022_1.8e9ad5a65a50437af8aa.jpg",
+    "static/media/zamma_2022_2.jpg": "/static/media/zamma_2022_2.4c07676a7499d10e03bd.jpg",
+    "static/media/zamma_2022_3.jpg": "/static/media/zamma_2022_3.3930e1509fef93cf4358.jpg",
     "static/media/straßenmusik_2021.jpg": "/static/media/straßenmusik_2021.478ce7e241b7641177b9.jpg",
     "static/media/kelterfest_2.jpg": "/static/media/kelterfest_2.8011a3b3a42a0d1ad019.jpg",
     "static/media/juli.jpg": "/static/media/juli.22496194a14df791a46d.jpg",
@@ -27,11 +32,11 @@
     "static/media/close.svg": "/static/media/close.685aafe261032eb33d2b42b682b8776c.svg",
     "static/media/menu.svg": "/static/media/menu.5633f109811c04537824c5a6909e5243.svg",
     "main.cdb4874b.css.map": "/static/css/main.cdb4874b.css.map",
-    "main.d7526fb0.js.map": "/static/js/main.d7526fb0.js.map",
+    "main.d71a7ae3.js.map": "/static/js/main.d71a7ae3.js.map",
     "787.b7851cb9.chunk.js.map": "/static/js/787.b7851cb9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cdb4874b.css",
-    "static/js/main.d7526fb0.js"
+    "static/js/main.d71a7ae3.js"
   ]
 }
