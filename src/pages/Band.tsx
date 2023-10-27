@@ -110,13 +110,13 @@ export function Band() {
                   , <Link onClick={() =>setSelected(marcel)}>{marcel.firstName} {marcel.secondName}</Link>
                   , <Link onClick={() =>setSelected(juli)}>{juli.firstName} {juli.secondName}</Link>
                 {' und '} <Link onClick={() =>setSelected(max)}>{max.firstName} {max.secondName}</Link>.
-                  Wir kommen aus Weinstadt und machen regelmäßig in Weinstadt und Umgebung gemütliche Livemusik.
+                  Wir kommen aus Weinstadt und treten regelmäßig in unserer Heimatstadt und den umliegenden Regionen auf.
                   Einige unserer Auftritte sind <Link onClick={() => scrollTo('tour')}>hier</Link> zu finden.
                   Man kann uns übrigens auch <Link onClick={() => scrollTo('contact')}>buchen</Link>!
               </Paragraph>
               <Paragraph>
-                  Wir spielen enspannte Musik mit Akustikgitarre oder ruhiger E-Gitarre, E-Piano, Cajon und Bass.
-                  Dabei suchen wir uns querbeet aus, worauf wir Lust haben. <Link onClick={() => scrollTo('repertoire')}>Unser Repertoire</Link> reicht
+                  Wir lieben handgemachte Musik, bei der wir Akustikgitarre, ruhige E-Gitarre, E-Piano, Cajon und Bass einsetzen.
+                  Dabei suchen wir uns querbeet aus, worauf wir gerade Lust haben. <Link onClick={() => scrollTo('repertoire')}>Unser Repertoire</Link> reicht
                   von aktuellem Indie-Pop, über Cover von Singer-Songwriter-Klassikern, bis hin zu einigen selbst geschriebenen Titeln.
               </Paragraph>
               <Paragraph />
@@ -127,8 +127,8 @@ export function Band() {
                   Marcel und Marc haben sich bereits 2018 für einen ersten Auftritt als carlstone zusammengetan.
                   2019 waren es dann schon drei Auftritte, wobei zu Weihnachten im Gretle Juli dazu gekommen ist.
                   Trotz Pandemie konnten wir dann 2020 über den Sommer schon ein paar mehr Auftritte spielen.
-                  Seit Sommer 2021 verstärkt uns außerdem noch Max am E-Piano. In diesem Jahr traten wir regelmäßig auf:
-                  Mehrfach im Gretle in Strümpfelbach, in der Kelter Strümpfelbach, auf privaten Feiern oder auch in Plochingen auf dem Marktplatz.
+                  Seit Sommer 2021 verstärkt uns außerdem noch Max am E-Piano. Übers Jahr traten wir regelmäßig auf:
+                  Zum Beispiel Gretle in Strümpfelbach, bei verschiedenen Weingütern im Remstal und auf privaten Feiern.
               </Paragraph>
               <Paragraph />
           </S.Band> }

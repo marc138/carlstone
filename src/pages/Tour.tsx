@@ -21,24 +21,6 @@ type TourDate = {
 
 const tourDates: TourDate[] = [
   {
-    date: '28.01.',
-    link: {
-      link: 'https://weingut-knauss.com/',
-      name: 'Weingut Knauß',
-    },
-    heading: 'WEIN x KULINARIK im Januar',
-    description: 'Ab 16:30 bei %link% in Strümpfelbach',
-  },
-  {
-    date: '07.08.',
-    link: {
-      link: 'https://www.moedinger-weingut.de/',
-      name: 'Weingut Mödinger',
-    },
-    heading: 'Koppafest',
-    description: 'Abends im %link% in Strümpfelbach',
-  },
-  {
     date: '24.12.',
     link: {
       link: 'https://www.zum-gretle.de/',

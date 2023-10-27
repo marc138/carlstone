@@ -1,4 +1,4 @@
-# Neue Version Veröffenltichen
+# Neue Version Veröffentlichen
 - sha keys in id_rsa umbenennen
 - git commit -m 'commit message' -a
 - git push
