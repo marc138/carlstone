@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cdb4874b.css",
-    "main.js": "/static/js/main.b2ea0e37.js",
+    "main.js": "/static/js/main.ee43f3d9.js",
     "static/js/787.b7851cb9.chunk.js": "/static/js/787.b7851cb9.chunk.js",
     "static/media/idler_2022.jpg": "/static/media/idler_2022.008f36d688a738719d1e.jpg",
     "static/media/kelterfest_2022.jpg": "/static/media/kelterfest_2022.39e3f2bb96e831b8647e.jpg",
@@ -19,6 +19,8 @@
     "static/media/marc_2.jpg": "/static/media/marc_2.76cba7b8b6baffb84e2b.jpg",
     "static/media/marc.jpg": "/static/media/marc.31a4f4eb95ee42b6e92b.jpg",
     "static/media/Weinberg_2.jpg": "/static/media/Weinberg_2.9d088fc4f67fdb69527a.jpg",
+    "static/media/maier_2023_2.jpg": "/static/media/maier_2023_2.d6248fb561e8d38e5920.jpg",
+    "static/media/maier_2023_1.jpg": "/static/media/maier_2023_1.8230b7dd44d9d387064c.jpg",
     "static/media/gretle_2021.jpg": "/static/media/gretle_2021.df5f2ada76b9e8fd56e8.jpg",
     "static/media/max.jpg": "/static/media/max.7c14b1c8940703527a5f.jpg",
     "static/media/hochzeit_2021.jpg": "/static/media/hochzeit_2021.1c574e756edb5ec99b52.jpg",
@@ -32,11 +34,11 @@
     "static/media/close.svg": "/static/media/close.685aafe261032eb33d2b42b682b8776c.svg",
     "static/media/menu.svg": "/static/media/menu.5633f109811c04537824c5a6909e5243.svg",
     "main.cdb4874b.css.map": "/static/css/main.cdb4874b.css.map",
-    "main.b2ea0e37.js.map": "/static/js/main.b2ea0e37.js.map",
+    "main.ee43f3d9.js.map": "/static/js/main.ee43f3d9.js.map",
     "787.b7851cb9.chunk.js.map": "/static/js/787.b7851cb9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cdb4874b.css",
-    "static/js/main.b2ea0e37.js"
+    "static/js/main.ee43f3d9.js"
   ]
 }
