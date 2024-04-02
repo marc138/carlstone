@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.cdb4874b.css",
-    "main.js": "/static/js/main.ee43f3d9.js",
+    "main.js": "/static/js/main.afc12a5d.js",
     "static/js/787.b7851cb9.chunk.js": "/static/js/787.b7851cb9.chunk.js",
     "static/media/idler_2022.jpg": "/static/media/idler_2022.008f36d688a738719d1e.jpg",
     "static/media/kelterfest_2022.jpg": "/static/media/kelterfest_2022.39e3f2bb96e831b8647e.jpg",
@@ -18,13 +18,14 @@
     "static/media/Weinberg.jpg": "/static/media/Weinberg.577e566d09b9a03fb134.jpg",
     "static/media/marc_2.jpg": "/static/media/marc_2.76cba7b8b6baffb84e2b.jpg",
     "static/media/marc.jpg": "/static/media/marc.31a4f4eb95ee42b6e92b.jpg",
+    "static/media/zamma_2024_1.jpg": "/static/media/zamma_2024_1.7cb93feca9733c93e4b4.jpg",
     "static/media/Weinberg_2.jpg": "/static/media/Weinberg_2.9d088fc4f67fdb69527a.jpg",
     "static/media/maier_2023_2.jpg": "/static/media/maier_2023_2.d6248fb561e8d38e5920.jpg",
     "static/media/maier_2023_1.jpg": "/static/media/maier_2023_1.8230b7dd44d9d387064c.jpg",
+    "static/media/zamma_2024_2.jpg": "/static/media/zamma_2024_2.d621fb2c2e502a14cb01.jpg",
     "static/media/gretle_2021.jpg": "/static/media/gretle_2021.df5f2ada76b9e8fd56e8.jpg",
     "static/media/max.jpg": "/static/media/max.7c14b1c8940703527a5f.jpg",
     "static/media/hochzeit_2021.jpg": "/static/media/hochzeit_2021.1c574e756edb5ec99b52.jpg",
-    "static/media/band.jpg": "/static/media/band.85b48f57a98f157caeb6.jpg",
     "static/media/amps.jpg": "/static/media/amps.9a214292c47b380ecb45.jpg",
     "static/media/rmk_2020.jpg": "/static/media/rmk_2020.abb1da9a15ce5c22baa8.jpg",
     "static/media/Garage.jpg": "/static/media/Garage.f4dee062d0e06ef07865.jpg",
@@ -34,11 +35,11 @@
     "static/media/close.svg": "/static/media/close.685aafe261032eb33d2b42b682b8776c.svg",
     "static/media/menu.svg": "/static/media/menu.5633f109811c04537824c5a6909e5243.svg",
     "main.cdb4874b.css.map": "/static/css/main.cdb4874b.css.map",
-    "main.ee43f3d9.js.map": "/static/js/main.ee43f3d9.js.map",
+    "main.afc12a5d.js.map": "/static/js/main.afc12a5d.js.map",
     "787.b7851cb9.chunk.js.map": "/static/js/787.b7851cb9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.cdb4874b.css",
-    "static/js/main.ee43f3d9.js"
+    "static/js/main.afc12a5d.js"
   ]
 }
