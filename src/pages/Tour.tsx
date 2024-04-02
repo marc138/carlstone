@@ -20,6 +20,43 @@ type TourDate = {
 }
 
 const tourDates: TourDate[] = [
+
+  {
+    date: '04.05.',
+    link: {
+      link: 'http://www.weinbau-sigle.de/',
+      name: 'Weinbau Sigle',
+    },
+    heading: 'Besengarten',
+    description: 'Ab ca. 18:30 bei %link% im Besengarten in Großheppach',
+  },
+  {
+    date: '17.06.',
+    link: {
+      link: 'https://www.maier-weingut.de/veranstaltungen/',
+      name: 'Weingut Maier',
+    },
+    heading: 'Wein.Afterwork im %link%',
+    description: 'Ab ca 18:00 im %link% in Schwaikheim',
+  },
+  {
+    date: '27.06.',
+    link: {
+      link: 'https://weingut-klopfer.de/veranstaltung/ausschank-vinothek-am-steingrueble-69/',
+      name: 'Weingut Klopfer',
+    },
+    heading: 'Ausschank Vinothek am Steingrüble',
+    description: 'Ab ca 17:30 im %link% in Großheppach',
+  },
+  {
+    date: '18.07.',
+    link: {
+      link: 'https://weingut-idler.de/',
+      name: 'Weingut Idler',
+    },
+    heading: 'Sommer-zeit %link%',
+    description: 'Ab ca 18:00 im %link% Strümpfelbach',
+  },
   {
     date: '24.12.',
     link: {
@@ -35,7 +72,7 @@ export function Tour(): JSX.Element {
   return (
     <S.TourStyled>
       <S.TourWrapper>
-        <S.Heading>2023</S.Heading>
+        <S.Heading>2024</S.Heading>
         <S.TableWrapper>
           {tourDates.map((tourDate, index) => {
             return !tourDate.hide && (

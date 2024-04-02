@@ -9,7 +9,7 @@ export const GalleryStyled = styled.div`
 export const GalleryContainer = styled.div`
   height: calc(100% - 48px);
   margin: 24px 0;
-  max-height: 100%;
+  max-height: calc(100% - 48px);
   max-width: 800px;
   width: 100%;
 `;

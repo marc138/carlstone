@@ -14,6 +14,7 @@ import kelterfest3 from '../resources/images/kelterfest_3.jpg';
 import zamma_2022_1 from '../resources/images/zamma_2022_1.jpg';
 import zamma_2022_2 from '../resources/images/zamma_2022_2.jpg';
 import zamma_2022_3 from '../resources/images/zamma_2022_3.jpg';
+import zamma_2024_1 from '../resources/images/zamma_2024_1.jpg';
 import idler_2022 from '../resources/images/idler_2022.jpg';
 import kelterfest2022 from '../resources/images/kelterfest_2022.jpg';
 import maier_2023_1 from '../resources/images/maier_2023_1.jpg';
@@ -26,7 +27,11 @@ export function Gallery() {
   return (
     <S.GalleryStyled>
       <S.GalleryContainer>
-        <Carousel showArrows={true} >
+        <Carousel dynamicHeight={true} showArrows={true} >
+          <div>
+            <img src={zamma_2024_1} alt={''}/>
+            <p className="legend">Konzert im [zamma] Geradstetten 2024</p>
+          </div>
           <div>
             <img src={maier_2023_1} alt={''}/>
             <p className="legend">Weingut Maier in Schwaikheim 2023</p>

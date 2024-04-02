@@ -7,15 +7,16 @@ const songs = [
   'Blink 128',
   'Bright Eyes',
   'Clueso',
-  'Dolly Parton',
+  'Danger Dan',
+  'Der Nino aus Wien',
   'Eagles',
   'Eels',
+  'Elliot Smith',
   'Eric Clapton',
   'Faber',
   'Father John Misty',
   'Foo Fighters',
   'Fortuna Ehrenfeld',
-  'Guns n roses',
   'John Butler Trio',
   'Johnny Cash',
   'Mumford & Sons',
@@ -24,11 +25,11 @@ const songs = [
   'Red Hot Chili Peppers',
   'REM',
   'Roy Bianco und die Abbrunzati Boys',
+  'Selig',
   'Steiner und Madlaina',
   'Stoppok',
   'The Dead South',
   'The Gaslight Anthem',
-  'The Killers',
   'The Mountain Goats',
   'The Verve',
   'Tom Petty',
@@ -38,7 +39,7 @@ const songs = [
 export function Repertoire() {
   return (
     <S.RepertoireStyled>
-      <div>Wir Covern unter anderem von diesen Künstlern:
+      <div>Neben eigenen Songs covern wir unter anderem von diesen Künstlern:
         <ul>
           {songs.map( song => <li>{song}</li>)}
         </ul>

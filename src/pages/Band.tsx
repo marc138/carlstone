@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import band from '../resources/images/band.jpg';
+import zamma_2024_2 from '../resources/images/zamma_2024_2.jpg';
 import marcImg from '../resources/images/marc.jpg';
 import marcelImg from '../resources/images/marcel.jpg';
 import juliImg from '../resources/images/juli.jpg';
@@ -28,7 +28,7 @@ type Selectable = Band | Member;
 
 const carlstone: Band = {
   name: 'carlstone',
-  image: band,
+  image: zamma_2024_2,
   description: 'Nachhaltige und handgemachte Live-Musik aus regionalen Produkten seit 2018.',
 }
 
