@@ -127,7 +127,7 @@ export function Band() {
                   Marcel und Marc haben sich bereits 2018 für einen ersten Auftritt als carlstone zusammengetan.
                   2019 waren es dann schon drei Auftritte, wobei zu Weihnachten im Gretle Juli dazu gekommen ist.
                   Trotz Pandemie konnten wir dann 2020 über den Sommer schon ein paar mehr Auftritte spielen.
-                  Seit Sommer 2021 verstärkt uns außerdem noch Max am E-Piano. Übers Jahr traten wir regelmäßig auf:
+                  Seit Sommer 2021 verstärkt uns außerdem noch Max am E-Piano. Übers Jahr treten wir regelmäßig auf:
                   Zum Beispiel Gretle in Strümpfelbach, bei verschiedenen Weingütern im Remstal und auf privaten Feiern.
               </Paragraph>
               <Paragraph />
