@@ -37,7 +37,7 @@ const tourDates: TourDate[] = [
       name: 'Weingut Maier',
     },
     heading: 'Wein.Afterwork im %link%',
-    description: 'Ab ca 18:00 im %link% in Schwaikheim',
+    description: 'Ab ca. 18:00 im %link% in Schwaikheim',
   },
   {
     date: '27.06.',
@@ -46,7 +46,7 @@ const tourDates: TourDate[] = [
       name: 'Weingut Klopfer',
     },
     heading: 'Ausschank Vinothek am Steingrüble',
-    description: 'Ab ca 17:30 im %link% in Großheppach',
+    description: 'Ab ca. 17:30 im %link% in Großheppach',
   },
   {
     date: '18.07.',
@@ -55,7 +55,25 @@ const tourDates: TourDate[] = [
       name: 'Weingut Idler',
     },
     heading: 'Sommer-zeit %link%',
-    description: 'Ab ca 18:00 im %link% Strümpfelbach',
+    description: 'Ab ca. 18:00 im %link% Strümpfelbach',
+  },
+  {
+    date: '27.07.',
+    link: {
+      link: 'https://maps.app.goo.gl/XiCTQ6ipqRrG2k8JA',
+      name: 'Pferdehof Diakonie Stetten',
+    },
+    heading: '50-jähriges Jubiläum %link%',
+    description: 'Am Abend auf dem %link%',
+  },
+  {
+    date: '04.08.',
+    link: {
+      link: 'http://rohrbronn.de/veranstaltungen/',
+      name: 'Rohrbronn',
+    },
+    heading: 'Hocketse %link%',
+    description: 'Von 15:30 bis 19:30 in %link%',
   },
   {
     date: '24.12.',
