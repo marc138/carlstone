@@ -22,7 +22,7 @@ type TourDate = {
 const tourDates: TourDate[] = [
 
   {
-    date: '04.05.',
+    date: '03.05.',
     link: {
       link: 'http://www.weinbau-sigle.de/',
       name: 'Weinbau Sigle',
@@ -31,25 +31,7 @@ const tourDates: TourDate[] = [
     description: 'Ab ca. 18:30 bei %link% im Besengarten in Großheppach',
   },
   {
-    date: '17.06.',
-    link: {
-      link: 'https://www.maier-weingut.de/veranstaltungen/',
-      name: 'Weingut Maier',
-    },
-    heading: 'Wein.Afterwork im %link%',
-    description: 'Ab ca. 18:00 im %link% in Schwaikheim',
-  },
-  {
-    date: '27.06.',
-    link: {
-      link: 'https://weingut-klopfer.de/veranstaltung/ausschank-vinothek-am-steingrueble-69/',
-      name: 'Weingut Klopfer',
-    },
-    heading: 'Ausschank Vinothek am Steingrüble',
-    description: 'Ab ca. 17:30 im %link% in Großheppach',
-  },
-  {
-    date: '18.07.',
+    date: '28.05.',
     link: {
       link: 'https://weingut-idler.de/',
       name: 'Weingut Idler',
@@ -58,22 +40,31 @@ const tourDates: TourDate[] = [
     description: 'Ab ca. 18:00 im %link% Strümpfelbach',
   },
   {
-    date: '27.07.',
+    date: '16.06.',
     link: {
-      link: 'https://maps.app.goo.gl/XiCTQ6ipqRrG2k8JA',
-      name: 'Pferdehof Diakonie Stetten',
+      link: 'https://www.maier-weingut.de/veranstaltungen/',
+      name: 'Weingut Maier',
     },
-    heading: '50-jähriges Jubiläum %link%',
-    description: 'Am Abend auf dem %link%',
+    heading: 'Wein.Afterwork im %link%',
+    description: 'Ab ca. 18:00 im %link% in Schwaikheim',
   },
   {
-    date: '04.08.',
+    date: '26.06.',
     link: {
-      link: 'http://rohrbronn.de/veranstaltungen/',
-      name: 'Rohrbronn',
+      link: 'https://weingut-klopfer.de/veranstaltung/ausschank-vinothek-am-steingrueble-69/',
+      name: 'Weingut Klopfer',
     },
-    heading: 'Hocketse %link%',
-    description: 'Von 15:30 bis 19:30 in %link%',
+    heading: 'Ausschank Vinothek am Steingrüble',
+    description: 'Ab ca. 18:00 im %link% in Großheppach',
+  },
+  {
+    date: '28.08.',
+    link: {
+      link: 'https://www.kuhnle-neue-scheuer.de/',
+      name: 'Kuhnle Neue Scheuer',
+    },
+    heading: 'Sommerfest im Besa %link%',
+    description: 'Den ganzen Abend in Endersbach bei %link%',
   },
   {
     date: '24.12.',
@@ -90,7 +81,7 @@ export function Tour(): JSX.Element {
   return (
     <S.TourStyled>
       <S.TourWrapper>
-        <S.Heading>2024</S.Heading>
+        <S.Heading>2025</S.Heading>
         <S.TableWrapper>
           {tourDates.map((tourDate, index) => {
             return !tourDate.hide && (
