@@ -67,6 +67,15 @@ const tourDates: TourDate[] = [
     description: 'Den ganzen Abend in Endersbach bei %link%',
   },
   {
+    date: '12.10.',
+    link: {
+      link: 'https://www.zum-gretle.de/',
+      name: 'Gretle',
+    },
+    heading: 'Traube goes %link%',
+    description: 'Gasthaus %link% Strümpfelbach',
+  },
+  {
     date: '24.12.',
     link: {
       link: 'https://www.zum-gretle.de/',
