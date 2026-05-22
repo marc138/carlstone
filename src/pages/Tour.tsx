@@ -20,18 +20,8 @@ type TourDate = {
 }
 
 const tourDates: TourDate[] = [
-
   {
-    date: '03.05.',
-    link: {
-      link: 'http://www.weinbau-sigle.de/',
-      name: 'Weinbau Sigle',
-    },
-    heading: 'Besengarten',
-    description: 'Ab ca. 18:30 bei %link% im Besengarten in Großheppach',
-  },
-  {
-    date: '28.05.',
+    date: '03.06.',
     link: {
       link: 'https://weingut-idler.de/',
       name: 'Weingut Idler',
@@ -40,7 +30,7 @@ const tourDates: TourDate[] = [
     description: 'Ab ca. 18:00 im %link% Strümpfelbach',
   },
   {
-    date: '16.06.',
+    date: '29.06.',
     link: {
       link: 'https://www.maier-weingut.de/veranstaltungen/',
       name: 'Weingut Maier',
@@ -49,16 +39,7 @@ const tourDates: TourDate[] = [
     description: 'Ab ca. 18:00 im %link% in Schwaikheim',
   },
   {
-    date: '26.06.',
-    link: {
-      link: 'https://weingut-klopfer.de/veranstaltung/ausschank-vinothek-am-steingrueble-69/',
-      name: 'Weingut Klopfer',
-    },
-    heading: 'Ausschank Vinothek am Steingrüble',
-    description: 'Ab ca. 18:00 im %link% in Großheppach',
-  },
-  {
-    date: '28.08.',
+    date: '27.08.',
     link: {
       link: 'https://www.kuhnle-neue-scheuer.de/',
       name: 'Kuhnle Neue Scheuer',
@@ -66,31 +47,13 @@ const tourDates: TourDate[] = [
     heading: 'Sommerfest im Besa %link%',
     description: 'Den ganzen Abend in Endersbach bei %link%',
   },
-  {
-    date: '12.10.',
-    link: {
-      link: 'https://www.zum-gretle.de/',
-      name: 'Gretle',
-    },
-    heading: 'Traube goes %link%',
-    description: 'Gasthaus %link% Strümpfelbach',
-  },
-  {
-    date: '24.12.',
-    link: {
-      link: 'https://www.zum-gretle.de/',
-      name: 'Gretle',
-    },
-    heading: 'Scheinheiliger Vormittag im %link%',
-    description: 'Ab 11:00 im Gasthaus %link% Strümpfelbach',
-  },
 ];
 
 export function Tour(): JSX.Element {
   return (
     <S.TourStyled>
       <S.TourWrapper>
-        <S.Heading>2025</S.Heading>
+        <S.Heading>2026</S.Heading>
         <S.TableWrapper>
           {tourDates.map((tourDate, index) => {
             return !tourDate.hide && (
