@@ -40,9 +40,9 @@ export function SideMenu({closeSideMenu, setIsImpressumOpen}: SideMenuProps) {
             galerie</S.Entry>
           <S.Entry onClick={() => {
             closeSideMenu();
-            scrollTo('repertoire');
+            scrollTo('videos');
           }}>
-            repertoire</S.Entry>
+            videos</S.Entry>
           <S.Entry onClick={() => {
             closeSideMenu();
             scrollTo('contact');

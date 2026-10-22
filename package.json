@@ -16,7 +16,6 @@
     "react": "^16.13.0",
     "react-bootstrap": "^2.1.1",
     "react-dom": "^16.13.0",
-    "react-responsive-carousel": "^3.2.22",
     "react-scripts": "5.0.0",
     "react-string-replace": "^1.0.0",
     "styled-components": "^5.3.3",

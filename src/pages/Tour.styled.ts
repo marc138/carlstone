@@ -1,9 +1,9 @@
-import styled, { css } from 'styled-components';
-import {dark, grey, white } from '../utils/colors';
-import Table from 'react-bootstrap/Table'
+import styled from 'styled-components';
+import {grey, white } from '../utils/colors';
 
 export const TourStyled = styled.div`
-  height: 100%;
+  height: auto;
+  overflow: visible;
 `;
 
 export const TourWrapper = styled.div`
@@ -15,6 +15,8 @@ export const TourWrapper = styled.div`
 export const Heading = styled.div`
   width: 100%;
   text-align: center;
+  margin-top: 32px;
+  margin-bottom: 16px;
 `;
 
 export const TableWrapper = styled.div`

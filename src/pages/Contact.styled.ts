@@ -29,4 +29,10 @@ export const ImpressumHead = styled.div`
 
 export const ImpressumBody = styled.div`
   padding-inline: 16px;
+
+  a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+  }
 `;

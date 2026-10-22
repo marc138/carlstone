@@ -54,6 +54,7 @@ export const ImageSide = styled.div`
   float: left;
   min-width: 286px;
   width: calc(50% + 12px);
+  position: relative;
 `;
 
 export const Image = styled.img`
@@ -61,6 +62,16 @@ export const Image = styled.img`
   max-width: calc(100% - 16px);
   margin: 16px 16px 16px 0;
   min-width: 250px;
+`;
+
+export const Photographer = styled.div`
+  position: absolute;
+  bottom: 5px;
+  left: 8px;
+  color: white;
+  font-size: 12px;
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+  opacity: 0.8;
 `;
 
 export const DescriptionSide = styled.div`

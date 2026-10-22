@@ -1,8 +1,7 @@
 import React from 'react';
 import { Link } from '../App.styled';
+import replaceString from 'react-string-replace';
 import * as S from './Tour.styled';
-
-const reactStringReplace = require('react-string-replace');
 
 function openLink(link: string) {
   return () => window.open(link, '_blank');
@@ -19,14 +18,14 @@ type TourDate = {
   hide?: boolean;
 }
 
-const tourDates: TourDate[] = [
+const tourDates2026: TourDate[] = [
   {
     date: '03.06.',
     link: {
       link: 'https://weingut-idler.de/',
       name: 'Weingut Idler',
     },
-    heading: 'Sommer-zeit %link%',
+    heading: 'Sommer-Zeit im %link%',
     description: 'Ab ca. 18:00 im %link% Strümpfelbach',
   },
   {
@@ -47,7 +46,66 @@ const tourDates: TourDate[] = [
     heading: 'Sommerfest im Besa %link%',
     description: 'Den ganzen Abend in Endersbach bei %link%',
   },
+  {
+    date: '07.11.',
+    heading: '100-Jähriges Jubiläum der Skizunft Endersbach',
+    description: 'Jahnhalle Weinstadt-Endersbach',
+  },
+  {
+    date: '24.12.',
+    heading: 'Heiliger Vormittag',
+    description: 'Ort wird noch bekannt gegeben',
+  },
 ];
+
+const tourDates2027: TourDate[] = [
+  {
+    date: '26.05.',
+    link: {
+      link: 'https://weingut-idler.de/',
+      name: 'Weingut Idler',
+    },
+    heading: 'Sommer-Zeit im %link%',
+    description: 'Weingut Idler Strümpfelbach',
+  },
+  {
+    date: '28.05.',
+    link: {
+      link: 'https://www.weingut-klopfer.de/',
+      name: 'Weingut Klopfer',
+    },
+    heading: '%link%',
+    description: 'Weingut Klopfer Großheppach',
+  },
+  {
+    date: '24.12.',
+    heading: 'Heiliger Vormittag',
+    description: 'Ort wird noch bekannt gegeben',
+  },
+];
+
+function renderTourDates(dates: TourDate[], startIndex: number) {
+  return dates.map((tourDate, i) => {
+    const index = startIndex + i;
+    return !tourDate.hide && (
+      <>
+        {index !== 0 && <S.Line/>}
+        <S.Entry>
+          <S.DateField>{tourDate.date}</S.DateField>
+          <S.HeadingField>
+            {replaceString(tourDate.heading, '%link%', (match, i) => tourDate.link && (
+              <Link onClick={openLink(tourDate.link.link)}>{tourDate.link.name}</Link>
+            ))}</S.HeadingField>
+          <S.DescriptionField>
+            {replaceString(tourDate.description, '%link%', (match, i) => tourDate.link && (
+              <Link onClick={openLink(tourDate.link.link)}>{tourDate.link.name}</Link>
+            ))}
+          </S.DescriptionField>
+        </S.Entry>
+      </>
+    );
+  });
+}
 
 export function Tour(): JSX.Element {
   return (
@@ -55,96 +113,13 @@ export function Tour(): JSX.Element {
       <S.TourWrapper>
         <S.Heading>2026</S.Heading>
         <S.TableWrapper>
-          {tourDates.map((tourDate, index) => {
-            return !tourDate.hide && (
-              <>
-                {index !== 0 && <S.Line/>}
-                <S.Entry>
-                  <S.DateField>{tourDate.date}</S.DateField>
-                  <S.HeadingField>
-                    {reactStringReplace(tourDate.heading, '%link%', (match, i) => tourDate.link && (
-                      <Link onClick={openLink(tourDate.link.link)}>{tourDate.link.name}</Link>
-                    ))}</S.HeadingField>
-                  <S.DescriptionField>
-                    {reactStringReplace(tourDate.description, '%link%', (match, i) => tourDate.link && (
-                      <Link onClick={openLink(tourDate.link.link)}>{tourDate.link.name}</Link>
-                    ))}
-                  </S.DescriptionField>
-                </S.Entry>
-              </>
-            );
-          })}
+          {renderTourDates(tourDates2026, 0)}
+        </S.TableWrapper>
+        <S.Heading>2027</S.Heading>
+        <S.TableWrapper>
+          {renderTourDates(tourDates2027, tourDates2026.length)}
         </S.TableWrapper>
       </S.TourWrapper>
     </S.TourStyled>
     )
 }
-
-/*
-
-
-  {
-    date: '25.06.',
-    link: {
-      link: 'https://weingut-idler.de/',
-      name: 'Weingut Idler',
-    },
-    heading: 'Sommerausschank %link%',
-    description: 'Ab ca 18:00 im %link% Strümpfelbach',
-  },
-  {
-    date: '26.08.',
-    link: {
-      link: 'https://www.kuhnle-neue-scheuer.de/',
-      name: 'Kuhnle Neue Scheuer',
-    },
-    heading: 'Sommerfest im Besa %link%',
-    description: 'Den ganzen Abend in Endersbach bei %link%',
-  },
-  {
-    date: '08.09.',
-    link: {
-      link: 'https://zamma-geradstetten.de/',
-      name: '[zamma]',
-    },
-    heading: 'Open Air im %link%',
-    description: 'Ab 19:00 im %link% Geradstetten',
-  },
-  {
-    date: '12.09.',
-    link: {
-      link: 'https://www.maier-weingut.de/veranstaltungen/',
-      name: 'Weingut Maier',
-    },
-    heading: 'Wein.Afterwork',
-    description: 'Beim letzen Wein.Afterwork im %link% in Schwaikheim',
-  },
-  {
-    date: '16.09.',
-    link: {
-      link: 'https://www.mannschreck-weine.com/',
-      name: 'Mannschreck Weine',
-    },
-    heading: 'Nacht der Keller',
-    description: 'Den ganzen Abend im Keller von %link% in Strümpfelbach',
-  },
-  {
-    date: '17.09.',
-    link: {
-      link: 'http://www.weinfreunde-struempfelbach.de/',
-      name: 'Weinfreunde Strümpfelbach',
-    },
-    heading: 'Nacht der Keller',
-    description: 'Mit kleiner Besetzung den ganzen Abend im Keller der %link% in Strümpfelbach',
-  },
-  {
-    date: '23.10.',
-    link: {
-      link: 'https://www.zum-gretle.de/',
-      name: 'Gretle',
-    },
-    heading: 'Hoffest im %link%',
-    description: 'Traditioneller Auftritt im traditionellen Gasthaus %link% Strümpfelbach',
-  },
-
- */

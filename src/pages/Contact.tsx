@@ -44,8 +44,11 @@ export function Contact({ isImpressumOpen, setIsImpressumOpen }: ContactProps) {
             <h2>Bilder</h2>
             <ul>
               <li>Privat</li>
-              <li>Paul Mang</li>
+              <li><a href="https://milenasprung.com/" target="_blank" rel="noopener noreferrer">Milena Sprung Fotografie</a></li>
+              <li>Marc Hekeler</li>
             </ul>
+            <br/>
+            <p>© 2026 carlstone – 100% handgemachte & nachhaltige Musik</p>
           </S.ImpressumBody>}
         </S.ImpressumStyled>
       </S.ContactWrapper>
