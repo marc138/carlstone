@@ -1,10 +1,10 @@
 import React, { useState } from 'react';
-import band from '../resources/images/band.jpg';
-import marcImg from '../resources/images/marc.jpg';
-import marcelImg from '../resources/images/marcel.jpg';
-import juliImg from '../resources/images/juli.jpg';
-import maxImg from '../resources/images/max.jpg';
-import amps from '../resources/images/amps.jpg';
+import band from '../resources/images/band-web/band.jpg';
+import marcImg from '../resources/images/band-web/marc.jpg';
+import marcelImg from '../resources/images/band-web/marcel.jpg';
+import juliImg from '../resources/images/band-web/juli.jpg';
+import maxImg from '../resources/images/band-web/max.jpg';
+import amps from '../resources/images/band-web/amps.jpg';
 import { scrollTo } from '../utils/jumper';
 import * as S from './Band.styled';
 import {Link, Paragraph } from '../App.styled';
